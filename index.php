@@ -1,7 +1,3 @@
-<?php
-// Start the session
-session_start();
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -373,16 +369,11 @@ session_start();
             <h1>Unlimited movies, TV shows and more.</h1>
             <h3>All of Netflix, starting at just KSH 500</h3>
             <p>Ready to watch? Enter your email to create or restart your membership.</p>
-            <form method="POST" action="./index.php">
+            <form method="GET" action="./pricing.php">
                 <input type="text" name="phone" id="mail" placeholder="Phone Number">
-                <a href="./pricing.php"> <p  class="btn btn-lg" type="submit" name="submit">GET STARTED</p> </a>
+                 <input type=submit value=Submit class="btn btn-lg"></form>
             </form>
-            <?
-            if(isset($_POST['submit'])){
-                $_SESSION["Phone_Number"] = $_POST['phone'];
-            }
-            
-            ?>
+       
         </div>
         <br><br><br><br><br>
     </header>
