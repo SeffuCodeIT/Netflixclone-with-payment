@@ -374,7 +374,7 @@ img{
 
     <section class="style-cards">
         <div class="card-0">
-            <img src="2.jpg" alt="Netflix Mobile">
+            <img src="./images/2.jpg" alt="Netflix Mobile">
             <div class="desc-0">
                 <h1>Create profiles for kids.</h1>
                 <h3>Send kids on adventures with their favourite characters in a space made just for them—free with your membership.</h3>
@@ -385,7 +385,7 @@ img{
                 <h1>Enjoy on your TV.</h1>
                 <h3>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</h3>
             </div>
-            <img src="tv.png" alt="Netflix TV">
+            <img src="./images/tv.png" alt="Netflix TV">
             <video class="video-1" autoplay="" playsinline="" muted="" loop=""><source src="1.m4v" type="video/mp4"></video>
         </div>
         <div class="card-2">
@@ -400,7 +400,7 @@ img{
                 <h1>Watch everywhere.</h1>
                 <h3>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h3>
             </div>
-            <img src="4.png" alt="Device-Pile-In">
+            <img src="./images/4.png" alt="Device-Pile-In">
             <video class="video-2" autoplay="" playsinline="" muted="" loop=""><source src="2.m4v" type="video/mp4"></video>
         </div>
     </section>
