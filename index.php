@@ -364,7 +364,7 @@ img{
             <h3>All of Netflix, starting at just KSH 500</h3>
             <p>Ready to watch? Enter your email to create or restart your membership.</p>
             <form  method="POST" action="./pricing.php">
-            <input type="text" name="phone_number" id="mail" placeholder="Phone Number">
+            <input type="text" name="phone" id="mail" placeholder="Phone Number">
             <a href="./pricing.php" class="btn btn-lg" type="submit"  name="submit" >GET STARTED</a>
             </form>
         </div>

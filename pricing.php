@@ -1,3 +1,83 @@
+<?php
+//STK PUSH FOR THE FIRST PLAN  
+ if(isset($_POST['standard'])){
+ 
+    $amount = '1'; //Amount to transact 
+    $phone = $_POST['phone']; // Phone number paying
+    
+    $Account_no = 'Netflix Pay'; // Enter account number optional
+    $url = 'https://tinypesa.com/api/v1/express/initialize';
+    $data = array(
+        'amount' => $amount,
+        'msisdn' => $phone,
+        'account_no'=>$Account_no
+    );
+    $headers = array(
+        'Content-Type: application/x-www-form-urlencoded',
+        'ApiKey: TqZBBoo8DoD' // Replace with your api key
+     );
+    $info = http_build_query($data);
+    
+    $curl = curl_init();
+    curl_setopt($curl, CURLOPT_URL, $url);
+    curl_setopt($curl, CURLOPT_POST, true);
+    curl_setopt($curl, CURLOPT_POSTFIELDS, $info);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+    $resp = curl_exec($curl);
+    $msg_resp = json_decode($resp);
+    
+    
+    if ($msg_resp ->success == 'true') {
+
+      echo "<center><h5>WAIT FOR  STK POP UP🔥</h5></center>";
+    } else {
+      echo "<center><h5> Phone number required🐛</h5></center>";
+     
+    }
+}
+
+
+//STK PUSH FOR THE SECOND PLAN 
+if(isset($_POST['premium'])){
+ 
+    $amount = '2'; //Amount to transact 
+    $phone = $_POST['phone']; // Phone number paying
+    
+    $Account_no = 'Netflix Pay'; // Enter account number optional
+    $url = 'https://tinypesa.com/api/v1/express/initialize';
+    $data = array(
+        'amount' => $amount,
+        'msisdn' => $phone,
+        'account_no'=>$Account_no
+    );
+    $headers = array(
+        'Content-Type: application/x-www-form-urlencoded',
+        'ApiKey: TqZBBoo8DoD' // Replace with your api key
+     );
+    $info = http_build_query($data);
+    
+    $curl = curl_init();
+    curl_setopt($curl, CURLOPT_URL, $url);
+    curl_setopt($curl, CURLOPT_POST, true);
+    curl_setopt($curl, CURLOPT_POSTFIELDS, $info);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+    $resp = curl_exec($curl);
+    $msg_resp = json_decode($resp);
+    
+    
+    if ($msg_resp ->success == 'true') {
+
+      echo "<center><h5>WAIT FOR  STK POP UP🔥</h5></center>";
+    } else {
+      echo "<center><h5> Phone number required🐛</h5></center>";
+     
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,7 +122,7 @@
                         <li>No downloads</li>
                         <li>Restricted access</li>
                     </ul>
-
+                
                     <a href="#" class="btn">Choose Plan</a>
                 </div>
 
@@ -73,8 +153,9 @@
                         <li>25 GB Storage</li>
                         <li>Phone Support</li>
                     </ul>
-
-                    <a href="#" class="btn">Choose Plan</a>
+                     <form action="./pricing.php" method="POST">
+                    <a href="#" class="btn" type="submit" name="standard">Choose Plan</a>
+                    </form>
                 </div>
 
                 <img class="table-bg" src="images/bg-shape2.svg" alt="">
@@ -101,8 +182,9 @@
                         <li>Unlimited Storage</li>
                         <li>Phone Support</li>
                     </ul>
-
-                    <a href="#" class="btn">Choose Plan</a>
+                     <form action="./pricing.php" method="POST">
+                    <a href="#" class="btn" type="submit" name="premium">Choose Plan</a>
+                    </form>
                 </div>
 
                 <img class="table-bg" src="images/bg-shape1.svg" alt="">
