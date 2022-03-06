@@ -154,7 +154,7 @@ if(isset($_POST['premium'])){
                         <li>Phone Support</li>
                     </ul>
                      <form action="./pricing.php" method="POST">
-                    <a href="#" class="btn" type="submit" name="standard">Choose Plan</a>
+                    <p  class="btn" type="submit" name="standard">Choose Plan</p>
                     </form>
                 </div>
 
@@ -183,7 +183,7 @@ if(isset($_POST['premium'])){
                         <li>Phone Support</li>
                     </ul>
                      <form action="./pricing.php" method="POST">
-                    <a href="#" class="btn" type="submit" name="premium">Choose Plan</a>
+                    <p  class="btn" type="submit" name="premium">Choose Plan</p>
                     </form>
                 </div>
 
