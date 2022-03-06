@@ -370,7 +370,7 @@
             <p>Ready to watch? Enter your email to create or restart your membership.</p>
             <form method="POST" action="./pricing.php">
                 <input type="text" name="phone" id="mail" placeholder="Phone Number">
-                <a href="./pricing.php" class="btn btn-lg" type="submit" name="submit">GET STARTED</a>
+                <p  class="btn btn-lg" type="submit" name="submit">GET STARTED</p>
             </form>
         </div>
         <br><br><br><br><br>
