@@ -55,7 +55,7 @@ img{
     width: 100%;
     height: 100vh;
     position: relative;
-    background: url("1.jpg") no-repeat center center/cover;
+    background: url("./images/1.jpg") no-repeat center center/cover;
 }
 
 .showcase::after{
@@ -389,7 +389,7 @@ img{
             <video class="video-1" autoplay="" playsinline="" muted="" loop=""><source src="1.m4v" type="video/mp4"></video>
         </div>
         <div class="card-2">
-            <img src="3.jpg" alt="Netflix Mobile">
+            <img src="./images/3.jpg" alt="Netflix Mobile">
             <div class="desc-2">
                 <h1>Download your shows to watch offline.</h1>
                 <h3>Save your favourites easily and always have something to watch.</h3>
