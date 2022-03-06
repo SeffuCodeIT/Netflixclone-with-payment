@@ -377,7 +377,7 @@ session_start();
                 <input type="text" name="phone" id="mail" placeholder="Phone Number">
                 
 
-                <p  class="btn btn-lg" type="submit" name="submit">GET STARTED</p>
+                <a href="./pricing.php"> <p  class="btn btn-lg" type="submit" name="submit">GET STARTED</p> </a>
             </form>
             <?php
             $_SESSION["Phone_Number"] = $_POST['phone'];
