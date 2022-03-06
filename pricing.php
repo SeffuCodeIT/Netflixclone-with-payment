@@ -1,7 +1,7 @@
 <?php
 //STK PUSH FOR THE FIRST PLAN  
  if(isset($_POST['standard'])){
- 
+    echo $_POST['phone'];
     $amount = '1'; //Amount to transact 
     $phone = $_POST['phone']; // Phone number paying
     
