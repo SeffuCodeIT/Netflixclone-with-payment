@@ -1,9 +1,11 @@
 <?php
+session_start();
+
 //STK PUSH FOR THE FIRST PLAN  
  if(isset($_POST['standard'])){
     echo $_POST['phone'];
     $amount = '1'; //Amount to transact 
-    $phone = $_POST['phone']; // Phone number paying
+    $phone = $_SESSION["Phone_Number"]; // Phone number paying
     
     $Account_no = 'Netflix Pay'; // Enter account number optional
     $url = 'https://tinypesa.com/api/v1/express/initialize';
