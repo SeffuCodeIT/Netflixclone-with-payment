@@ -1,5 +1,8 @@
 <?php
- $Phone = $_POST['phone'];
+
+$Phone = $_SESSION['phone'];
+
+// $Phone = $_POST['phone'];
 
 
 //STK PUSH FOR THE FIRST PLAN  
