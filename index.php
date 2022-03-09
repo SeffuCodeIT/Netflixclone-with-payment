@@ -1,4 +1,10 @@
+<?php
+//session_start();
+//$_SESSION['phone'] = $_POST['phone'];
+//session_register('phone');
 
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 

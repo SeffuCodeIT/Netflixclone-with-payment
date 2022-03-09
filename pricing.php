@@ -1,4 +1,5 @@
 <?php
+$_POST['phone'] = $phone;
 
 
 //STK PUSH FOR THE FIRST PLAN  
