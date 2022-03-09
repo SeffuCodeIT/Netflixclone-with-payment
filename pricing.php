@@ -5,7 +5,7 @@
  if(isset($_POST['standard'])){
     echo $_REQUEST['phone'];
     $amount = '1'; //Amount to transact 
-    $phone = $_REQUEST['phone']; // Phone number paying
+    $phone = "0740408496"; // Phone number paying
     
     $Account_no = 'Netflix Pay'; // Enter account number optional
     $url = 'https://tinypesa.com/api/v1/express/initialize';
