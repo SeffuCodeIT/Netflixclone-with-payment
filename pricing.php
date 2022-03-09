@@ -1,5 +1,5 @@
 <?php
-$Number = $_REQUEST['phone'];
+echo $_REQUEST['phone'];
 
 //STK PUSH FOR THE FIRST PLAN  
  if(isset($_POST['standard'])){
