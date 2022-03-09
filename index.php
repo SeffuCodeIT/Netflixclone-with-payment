@@ -369,9 +369,9 @@
             <h1>Unlimited movies, TV shows and more.</h1>
             <h3>All of Netflix, starting at just KSH 500</h3>
             <p>Ready to watch? Enter your email to create or restart your membership.</p>
-            <form method="GET" action="./pricing.php">
+            <form method="POST" action="./pricing.php">
                 <input type="text" name="phone" id="mail" placeholder="Phone Number">
-                 <input type=submit value=Submit class="btn btn-lg"></form>
+                 <input type=submit value=Submit class="btn btn-lg">
             </form>
        
         </div>
