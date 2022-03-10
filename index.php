@@ -377,13 +377,16 @@ img {
             .home_input {
                 padding-right: 55px;
             }
+            .dial{
+                padding-top: 3px;
+            }
             </style>
             <h1>Unlimited movies, TV shows and more.</h1>
             <h3>All of Netflix, starting at just KSH 500</h3>
             <p>Ready to watch? Enter your email to create or restart your membership.</p>
             <form method="POST" action="./pricing.php">
                 <input type="text" name="phone" id="mail" placeholder="Phone Number" class="home_input">
-                <p type=submit value=Submit class="btn btn-lg">Get started</p>
+                <p type=submit value=Submit class="btn btn-lg dial">Get started</p>
             </form>
 
         </div>
