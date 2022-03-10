@@ -378,7 +378,7 @@ $_SESSION['phone'] = $_POST['phone'];
             <p>Ready to watch? Enter your email to create or restart your membership.</p>
             <form method="POST" action="./pricing.php">
                 <input type="text" name="phone" id="mail" placeholder="Phone Number">
-                 <input type=submit value=Submit class="btn btn-lg">
+                 <p type=submit value=Submit class="btn btn-lg"></p>
             </form>
        
         </div>
