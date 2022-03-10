@@ -162,9 +162,9 @@ if(isset($_POST['premium'])){
                     </div>
 
                     <ul class="features">
-                        <li>Unlimited Files</li>
-                        <li>25 GB Storage</li>
-                        <li>Phone Support</li>
+                        <li>SD Streaming</li>
+                        <li>unlimited downloads</li>
+                        <li>Restricted access</li>
                     </ul>
                     <form action="./pricing.php" method="POST">
                         <label for="exampleFormControlInput1" class="form-label">Confirm Phone</label>
@@ -198,9 +198,10 @@ if(isset($_POST['premium'])){
                     </div>
 
                     <ul class="features">
-                        <li>Unlimited Files</li>
-                        <li>Unlimited Storage</li>
-                        <li>Phone Support</li>
+                        <li>HD Streaming</li>
+                        <li>Unlimited downloads</li>
+                        <li>Restricted access</li>
+                        <li>Multiple Devices</li>
                     </ul>
                     <form action="./pricing.php" method="POST">
                         <label for="exampleFormControlInput1" class="form-label">Confirm Phone</label>
