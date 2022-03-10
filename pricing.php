@@ -168,7 +168,7 @@ if(isset($_POST['premium'])){
                         <input type="email" class="form-control" id="exampleFormControlInput1"
                             placeholder="254 *** *** ">
                         <br>
-                        <button class="btn btn-info btn-lg" type="submit" name="standard">Choose Plan</button>
+                        <button class="btn btn-info btn-lg sub" type="submit" name="standard">Choose Plan</button>
                     </form>
                 </div>
 
