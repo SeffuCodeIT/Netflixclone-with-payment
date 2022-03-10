@@ -161,7 +161,7 @@ if(isset($_POST['premium'])){
                         <li>Phone Support</li>
                     </ul>
                      <form action="./pricing.php" method="POST">
-                    <button  class="btn" type="submit" name="standard">Choose Plan</button>
+                    <button  class="btn btn-info btn-lg" type="submit" name="standard">Choose Plan</button>
                     </form>
                 </div>
 

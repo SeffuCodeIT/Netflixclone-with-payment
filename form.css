@@ -5,10 +5,13 @@
     --light-color: #F1FAEE;
     --pink: #EF476F;
 }
+body{
+    background-image: url(./images/background.jpg);
+
+}
 
 .pricing-table-container {
     font-family: "Poppins", sans-serif;
-    background-image: url(./images/background.jpg);
 }
 
 .pricing-table-container .pricing-header {
