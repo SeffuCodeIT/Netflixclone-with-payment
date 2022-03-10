@@ -93,6 +93,8 @@ if(isset($_POST['premium'])){
     <title>Pricing</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
     <link rel="stylesheet" href="form.css">
 </head>
 <body>
@@ -128,8 +130,8 @@ if(isset($_POST['premium'])){
                         <li>No downloads</li>
                         <li>Restricted access</li>
                     </ul>
-                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                       <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">  
+                    <label for="exampleFormControlInput1" class="form-label">Confirm Phone</label>
+                       <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="254 *** *** ">  
                     <a href="#" class="btn">Choose Plan</a>
                 </div>
 
@@ -161,6 +163,8 @@ if(isset($_POST['premium'])){
                         <li>Phone Support</li>
                     </ul>
                      <form action="./pricing.php" method="POST">
+                     <label for="exampleFormControlInput1" class="form-label">Confirm Phone</label>
+                       <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="254 *** *** ">
                     <button  class="btn btn-info btn-lg" type="submit" name="standard">Choose Plan</button>
                     </form>
                 </div>
@@ -190,6 +194,8 @@ if(isset($_POST['premium'])){
                         <li>Phone Support</li>
                     </ul>
                      <form action="./pricing.php" method="POST">
+                     <label for="exampleFormControlInput1" class="form-label">Confirm Phone</label>
+                       <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="254 *** *** ">
                     <button  class="btn" type="submit" name="premium">Choose Plan</button>
                     </form>
                 </div>
