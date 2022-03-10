@@ -1,15 +1,16 @@
 <?php
 
-$Phone = $_SESSION['phone'];
 
-// $Phone = $_POST['phone'];
+
+
 
 
 //STK PUSH FOR THE FIRST PLAN  
  if(isset($_POST['standard'])){
-    echo $_POST['phone'];
+    $detail = $_POST['phone']; 
+
     $amount = '1'; //Amount to transact 
-    $phone = $Phone; // Phone number paying
+    $phone = $detail; // Phone number paying
     
     $Account_no = 'Netflix Pay'; // Enter account number optional
     $url = 'https://tinypesa.com/api/v1/express/initialize';
@@ -46,9 +47,9 @@ $Phone = $_SESSION['phone'];
 
 //STK PUSH FOR THE SECOND PLAN 
 if(isset($_POST['premium'])){
- 
+    $detail = $_POST['Phone']; 
     $amount = '2'; //Amount to transact 
-    $phone = $_POST['phone']; // Phone number paying
+    $phone = $detail; // Phone number paying
     
     $Account_no = 'Netflix Pay'; // Enter account number optional
     $url = 'https://tinypesa.com/api/v1/express/initialize';
@@ -152,7 +153,7 @@ if(isset($_POST['premium'])){
                     <h3>Standard </h3>
 
                     <div class="price-container">
-                        <span class="price professional-price">$99</span>
+                        <span class="price professional-price">KSH 700</span>
                         <span class="plan-duration">/ month</span>
                     </div>
 
@@ -168,7 +169,7 @@ if(isset($_POST['premium'])){
                     <form action="./pricing.php" method="POST">
                         <label for="exampleFormControlInput1" class="form-label">Confirm Phone</label>
                         <input type="text" class="form-control" id="exampleFormControlInput1"
-                            placeholder="254 *** *** ">
+                            placeholder="254 *** *** " name="phone">
                         <br>
                         <br>
                         <br>
@@ -188,7 +189,7 @@ if(isset($_POST['premium'])){
                     <h3>Business</h3>
 
                     <div class="price-container">
-                        <span class="price business-price">$149</span>
+                        <span class="price business-price">KSH 1,500</span>
                         <span class="plan-duration">/ month</span>
                     </div>
 
@@ -204,7 +205,7 @@ if(isset($_POST['premium'])){
                     <form action="./pricing.php" method="POST">
                         <label for="exampleFormControlInput1" class="form-label">Confirm Phone</label>
                         <input type="text" class="form-control" id="exampleFormControlInput1"
-                            placeholder="254 *** *** ">
+                            placeholder="254 *** *** " name="Phone">
                         <br><br><br>
                         <button class="btn sub" type="submit" name="premium">Choose Plan</button>
                     </form>
