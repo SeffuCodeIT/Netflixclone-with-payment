@@ -153,7 +153,7 @@ if(isset($_POST['premium'])){
                     <h3>Standard </h3>
 
                     <div class="price-container">
-                        <span class="price professional-price">KSH 700</span>
+                        <span class="price professional-price">$7</span>
                         <span class="plan-duration">/ month</span>
                     </div>
 
@@ -189,7 +189,7 @@ if(isset($_POST['premium'])){
                     <h3>Business</h3>
 
                     <div class="price-container">
-                        <span class="price business-price">KSH 1,500</span>
+                        <span class="price business-price">$ 15</span>
                         <span class="plan-duration">/ month</span>
                     </div>
 
