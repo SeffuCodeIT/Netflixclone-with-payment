@@ -168,6 +168,8 @@ if(isset($_POST['premium'])){
                         <input type="email" class="form-control" id="exampleFormControlInput1"
                             placeholder="254 *** *** ">
                         <br>
+                        <br>
+                        <br>
                         <button class="btn btn-info btn-lg sub" type="submit" name="standard">Choose Plan</button>
                     </form>
                 </div>
@@ -200,7 +202,8 @@ if(isset($_POST['premium'])){
                         <label for="exampleFormControlInput1" class="form-label">Confirm Phone</label>
                         <input type="email" class="form-control" id="exampleFormControlInput1"
                             placeholder="254 *** *** ">
-                        <button class="btn" type="submit" name="premium">Choose Plan</button>
+                            <br><br><br>
+                        <button class="btn sub" type="submit" name="premium">Choose Plan</button>
                     </form>
                 </div>
 
