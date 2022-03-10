@@ -375,7 +375,7 @@ img {
         <div class="showcase-content">
             <style>
             .home_input {
-                padding-right: 40px;
+                padding-right: 55px;
             }
             </style>
             <h1>Unlimited movies, TV shows and more.</h1>
