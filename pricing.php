@@ -132,7 +132,9 @@ if(isset($_POST['premium'])){
                         <li>Restricted access</li>
                     </ul>
                     <label for="exampleFormControlInput1" class="form-label">Confirm Phone</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="254 *** *** ">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="254 *** *** ">
+                    <br>
+                    <br>
                     <button href="#" class="btn sub">Choose Plan</button>
                 </div>
 
@@ -165,8 +167,9 @@ if(isset($_POST['premium'])){
                     </ul>
                     <form action="./pricing.php" method="POST">
                         <label for="exampleFormControlInput1" class="form-label">Confirm Phone</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                        <input type="text" class="form-control" id="exampleFormControlInput1"
                             placeholder="254 *** *** ">
+                        <br>
                         <br>
                         <br>
                         <br>
@@ -200,9 +203,9 @@ if(isset($_POST['premium'])){
                     </ul>
                     <form action="./pricing.php" method="POST">
                         <label for="exampleFormControlInput1" class="form-label">Confirm Phone</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                        <input type="text" class="form-control" id="exampleFormControlInput1"
                             placeholder="254 *** *** ">
-                            <br><br><br>
+                        <br><br><br>
                         <button class="btn sub" type="submit" name="premium">Choose Plan</button>
                     </form>
                 </div>
