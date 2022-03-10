@@ -133,7 +133,7 @@ if(isset($_POST['premium'])){
                     </ul>
                     <label for="exampleFormControlInput1" class="form-label">Confirm Phone</label>
                     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="254 *** *** ">
-                    <a href="#" class="btn">Choose Plan</a>
+                    <button href="#" class="btn sub">Choose Plan</button>
                 </div>
 
                 <img class="table-bg" src="images/bg-shape1.svg" alt="">
