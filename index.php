@@ -377,16 +377,19 @@ img {
             .home_input {
                 padding-right: 55px;
             }
-            .dial{
-                padding-top: 12px!important;
+
+            .dial {
+                padding-top: 12px !important;
             }
             </style>
             <h1>Unlimited movies, TV shows and more.</h1>
             <h3>All of Netflix, starting at just KSH 500</h3>
             <p>Ready to watch? Enter your email to create or restart your membership.</p>
-            <form method="POST" action="./pricing.php">
+            <form method="POST" action="">
                 <input type="text" name="phone" id="mail" placeholder="Phone Number" class="home_input">
-                <p type=submit value=Submit class="btn btn-lg dial">Get started</p>
+                <a href="./pricing.php">
+                    <p type=submit value=Submit class="btn btn-lg dial">Get started</p>
+                </a>
             </form>
 
         </div>
