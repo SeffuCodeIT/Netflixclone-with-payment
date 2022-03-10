@@ -378,7 +378,7 @@ img {
                 padding-right: 55px;
             }
             .dial{
-                padding-top: 3px;
+                padding-top: 5px!important;
             }
             </style>
             <h1>Unlimited movies, TV shows and more.</h1>
