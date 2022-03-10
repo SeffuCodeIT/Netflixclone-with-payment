@@ -128,7 +128,8 @@ if(isset($_POST['premium'])){
                         <li>No downloads</li>
                         <li>Restricted access</li>
                     </ul>
-                
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                       <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">  
                     <a href="#" class="btn">Choose Plan</a>
                 </div>
 
