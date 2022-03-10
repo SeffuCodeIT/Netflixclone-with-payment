@@ -376,10 +376,10 @@ $_SESSION['phone'] = $_POST['phone'];
             <h1>Unlimited movies, TV shows and more.</h1>
             <h3>All of Netflix, starting at just KSH 500</h3>
             <p>Ready to watch? Enter your email to create or restart your membership.</p>
-            <form method="POST" action="./index.php">
-                <input type="text" name="phone" id="mail" placeholder="Phone Number">
-                 <button type=submit value=Submit class="btn btn-lg">Submit</button>
-            </form>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Email address">
+              <span class="input-group-text" id="basic-addon2"> <a href="./pricing.html" style="text-decoration:none!important; color: white !important;"> Get Started <i class="bi bi-chevron-right text-white"></i> </a> </span>
+            </div>
        
         </div>
         <br><br><br><br><br>
