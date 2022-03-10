@@ -86,6 +86,7 @@ if(isset($_POST['premium'])){
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -96,8 +97,9 @@ if(isset($_POST['premium'])){
     <!-- CSS only -->
     <link rel="stylesheet" href="form.css">
 </head>
+
 <body>
-    
+
     <div class="pricing-table-container">
 
         <div class="pricing-header">
@@ -130,7 +132,7 @@ if(isset($_POST['premium'])){
                         <li>Restricted access</li>
                     </ul>
                     <label for="exampleFormControlInput1" class="form-label">Confirm Phone</label>
-                       <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="254 *** *** ">  
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="254 *** *** ">
                     <a href="#" class="btn">Choose Plan</a>
                 </div>
 
@@ -161,10 +163,12 @@ if(isset($_POST['premium'])){
                         <li>25 GB Storage</li>
                         <li>Phone Support</li>
                     </ul>
-                     <form action="./pricing.php" method="POST">
-                     <label for="exampleFormControlInput1" class="form-label">Confirm Phone</label>
-                       <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="254 *** *** ">
-                    <button  class="btn btn-info btn-lg" type="submit" name="standard">Choose Plan</button>
+                    <form action="./pricing.php" method="POST">
+                        <label for="exampleFormControlInput1" class="form-label">Confirm Phone</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="254 *** *** ">
+                        <br>
+                        <button class="btn btn-info btn-lg" type="submit" name="standard">Choose Plan</button>
                     </form>
                 </div>
 
@@ -192,10 +196,11 @@ if(isset($_POST['premium'])){
                         <li>Unlimited Storage</li>
                         <li>Phone Support</li>
                     </ul>
-                     <form action="./pricing.php" method="POST">
-                     <label for="exampleFormControlInput1" class="form-label">Confirm Phone</label>
-                       <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="254 *** *** ">
-                    <button  class="btn" type="submit" name="premium">Choose Plan</button>
+                    <form action="./pricing.php" method="POST">
+                        <label for="exampleFormControlInput1" class="form-label">Confirm Phone</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="254 *** *** ">
+                        <button class="btn" type="submit" name="premium">Choose Plan</button>
                     </form>
                 </div>
 
@@ -207,4 +212,5 @@ if(isset($_POST['premium'])){
 
     <script src="form.js"></script>
 </body>
+
 </html>
