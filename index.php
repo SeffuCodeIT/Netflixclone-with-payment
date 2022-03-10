@@ -385,12 +385,12 @@ img {
             <h1>Unlimited movies, TV shows and more.</h1>
             <h3>All of Netflix, starting at just KSH 500</h3>
             <p>Ready to watch? Enter your email to create or restart your membership.</p>
-            <form method="POST" action="">
-                <input type="text" name="phone" id="mail" placeholder="Phone Number" class="home_input">
-                <a href="./pricing.php">
-                    <p type=submit value=Submit class="btn btn-lg dial">Get started</p>
-                </a>
-            </form>
+          
+            <div class="input">
+                <input type="email" name="email" placeholder="Email Address" style="outline: none!important;">
+                <a href="./pricing.php" class="btn-rounded"><button>GET STARTED</button></a>
+            </div>
+           
 
         </div>
         <br><br><br><br><br>
