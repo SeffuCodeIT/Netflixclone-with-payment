@@ -1,3 +1,89 @@
+<?php 
+
+//index.php
+
+include 'database_connection.php';
+
+
+
+if(isset($_POST["submit"]))
+
+{
+
+
+
+
+    $formdata = array();
+
+
+
+    if(empty($_POST['phone']))
+    {
+       echo"<center><h5>Phone Number is Required🙄</h5></center>";
+    }
+    else
+    {
+        $formdata['phone'] = $_POST['phone'];
+    }
+
+    if($message == '')
+    {
+        $data = array(
+            ':phone'       =>  $formdata['phone']
+        );
+
+        $query = "
+        SELECT * FROM tinypesa 
+        WHERE PhoneNumber = :phone
+        ";
+
+        $statement = $conn->prepare($query);
+
+        $statement->execute($data);
+
+        if($statement->rowCount() > 0)
+        {
+            foreach($statement->fetchAll() as $row)
+            {
+                if($row['PhoneNumber'] == $formdata['phone'] && $row['MpesaReceiptNumber'] != NULL or $row['BackupNumber'] ==$formdata['phone'])
+                {
+                    session_start();
+
+                    session_regenerate_id();
+
+                    $user_session_id = session_id();
+
+                    $query = "
+                    UPDATE tinypesa 
+                    SET user_session_id = '".$user_session_id."' 
+                    WHERE user_id = '".$row['user_id']."'
+                    ";
+
+                    $conn->query($query);
+
+                    $_SESSION['user_id'] = $row['user_id'];
+
+                    $_SESSION['user_session_id'] = $user_session_id;
+
+                    echo"<center><h5>Success🎉 Redirect.... </h5></center>";
+
+                    header('location:home.php');
+                }
+                else
+                {
+                   echo"<center><p>Choose Subscription🎁 </p></center>";
+                }
+            }
+        }
+        else
+        {
+           
+
+        }
+    }
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
