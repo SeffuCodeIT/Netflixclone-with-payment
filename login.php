@@ -281,12 +281,13 @@ footer .links a {
             <div class="form-container">
                 <form>
                     <h1>Sign In</h1>
-                    
+                    <form action="./login.php" method="POST">
                     <div class="form-group">
-                        <input type="phone" required>
+                        <input type="phone" name="phone" required>
                         <label>Phone Number</label>
                     </div>
-                    <button>Sign In</button>
+                    <button type="submit" name="submit" >Sign In</button>
+                    </form>
                     <div class="remember">
                         <div class="left">
                             <input type="checkbox" id="remember">
