@@ -1,3 +1,20 @@
+<?php
+if (!isset($_SERVER['HTTP_REFERER'])) {
+    // redirect them to your desired location
+    header('location:../index.php');
+    exit;
+}
+
+
+//home.php
+
+session_start();
+
+if (!isset($_SESSION['user_session_id'])) {
+    header('location:./index.php');
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -4675,6 +4692,30 @@
   </footer>
 
   <!-- js files  -->
+  <script type='text/Javascript'>
+
+        function check_session_id() {
+        var session_id = "<?php echo $_SESSION['user_session_id']; ?>";
+
+        fetch('check_login.php').then(function(response) {
+
+            return response.json();
+
+        }).then(function(responseData) {
+
+            if (responseData.output == 'logout') {
+                window.location.href = 'logout.php';
+            }
+
+        });
+    }
+
+    setInterval(function() {
+
+        check_session_id();
+
+    }, 10000);
+    </script>
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
