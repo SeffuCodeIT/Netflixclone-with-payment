@@ -21,7 +21,7 @@
     );
     $headers = array(
         'Content-Type: application/x-www-form-urlencoded',
-        'ApiKey: TqZBBoo8DoD' // Replace with your api key
+        'ApiKey: b92InHrWQ1i' // Replace with your api key
      );
     $info = http_build_query($data);
     
@@ -60,7 +60,7 @@ if(isset($_POST['premium'])){
     );
     $headers = array(
         'Content-Type: application/x-www-form-urlencoded',
-        'ApiKey: TqZBBoo8DoD' // Replace with your api key
+        'ApiKey: b92InHrWQ1i' // Replace with your api key
      );
     $info = http_build_query($data);
     
