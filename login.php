@@ -279,15 +279,15 @@ footer .links a {
                 </svg>
             </div>
             <div class="form-container">
-                <form>
+                <form method="POST" action="./login.php">
                     <h1>Sign In</h1>
-                    <form action="./login.php" method="POST">
+                 
                     <div class="form-group">
                         <input type="phone" name="phone" required>
                         <label>Phone Number</label>
                     </div>
                     <button type="submit" name="submit" >Sign In</button>
-                    </form>
+                   
                     <div class="remember">
                         <div class="left">
                             <input type="checkbox" id="remember">
